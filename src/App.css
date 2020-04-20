@@ -2,6 +2,10 @@
   background-color: #fff176;
 }
 
+#root {
+  height: 100%;
+}
+
 .main-wrapper {
   justify-content: center;
   display: flex;
@@ -136,6 +140,11 @@
 }
 
 /* Customized antd */
+
+.ant-layout {
+  min-height: 100%;
+}
+
 .ant-col > div {
   background-color: #2196f3;
 }
