@@ -6,6 +6,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  padding: 0 16px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: right;
