@@ -95,22 +95,6 @@ export const PokemonStoreProvider = ({ children }) => {
         )
     },
 
-    getPokemonsForType: (type) => {
-      fetch(type.url)
-        .then((response) => response.json())
-        .then(
-          (response) => {
-            store.types = response["pokemon"]
-            store.types.forEach((type, i) => (store.types[i].selected = false))
-
-            store.typesIsLoaded = true
-          },
-          (error) => {
-            console.log("ERROR:", error)
-          }
-        )
-    },
-
     getDetailedInfo: (id) => {
       //fetch data and cache in store
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
